@@ -28,7 +28,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center active:scale-95">
             <motion.div
-              className="text-2xl font-bold text-primary-600 w-[150px] "
+              className="text-2xl font-bold text-primary-600 w-[100px] "
               whileHover={{ scale: 1.05 }}
             >
               <img

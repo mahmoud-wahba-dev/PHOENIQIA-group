@@ -11,7 +11,6 @@ import ServiceCard from "../components/ServiceCard";
 import { useLocation } from "react-router-dom"; // If using React Router
 import EmblaCarousel from "../components/EmblaCarousel"; // Your carousel component
 import { useEffect, useState } from "react";
-import { div } from "framer-motion/client";
 import AccordionItem from "../components/Accordion";
 
 const Services = () => {
@@ -65,14 +64,12 @@ const Services = () => {
             <div className="!h-full">
               <video
                 className=" w-full h-full object-cover"
-                src="https://www.dropbox.com/scl/fi/dqkxfckmmjcoiycqu02h5/dubai.mp4?rlkey=XXX&dl=1"
+                src="https://www.dropbox.com/scl/fi/dqkxfckmmjcoiycqu02h5/dubai.mp4?rlkey=rzn2w0d0qqgsrubwmu3wpotlw&st=dmvqu70t&dl=0&raw=1"
                 autoPlay
-                muted
                 loop
                 playsInline
                 preload="auto"
-                fetchPriority="high"
-                type="video/mp4"
+                muted
               />
             </div>
           </>
