@@ -67,11 +67,12 @@ const Services = () => {
                 className=" w-full h-full object-cover"
                 src="https://www.dropbox.com/scl/fi/dqkxfckmmjcoiycqu02h5/dubai.mp4?rlkey=XXX&dl=1"
                 autoPlay
+                muted
                 loop
                 playsInline
                 preload="auto"
-                muted
                 fetchPriority="high"
+                type="video/mp4"
               />
             </div>
           </>
