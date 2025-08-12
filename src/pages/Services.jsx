@@ -25,6 +25,8 @@ const Services = () => {
       items: t("services.business.items", { returnObjects: true }),
       motto: t("services.business.motto"),
       images: [
+        "/business_service_1.jpg",
+        "/business_service_2.jpg",
         "/business_services/business_service (1).jpg",
         "/business_services/business_service (2).jpg",
         "/business_services/business_service (3).jpg",

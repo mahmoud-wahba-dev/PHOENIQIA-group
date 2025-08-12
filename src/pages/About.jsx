@@ -40,7 +40,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-secondary-soft" >
               {t('about.title')}
             </h1>
             <p className="text-xl text-secondary-soft max-w-3xl mx-auto">
@@ -61,7 +61,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img
-                src="/phoeniqia.jpg"
+                src="/about_us.jpg"
                 alt="PHOENIQIA Group Office"
                 className="rounded-xl shadow-lg w-full"
                 onError={(e) => {

@@ -30,16 +30,16 @@ export default function EmblaCarousel({ images, isRTL }) {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto" dir={isRTL ? "rtl" : "ltr"}>
+    <div className="relative w-full max-w-5xl mx-auto py-6" dir={isRTL ? "rtl" : "ltr"}>
       {/* Carousel Viewport */}
       <div className="overflow-hidden rounded-xl" ref={emblaRef}>
         <div className={`flex ${isRTL ? "flex-row-reverse" : ""}`}>
           {images.map((src, idx) => (
             <div
               key={idx}
-              className="flex-[0_0_100%] relative transition-opacity duration-700 h-[300px] md:h-[500px]"
+              className="flex-[0_0_100%] flex justify-center relative transition-opacity duration-700 h-[300px] md:h-[500px]"
             >
-              <img src={src} alt="" className="w-full object-cover rounded-xl" />
+              <img src={src} alt="" className=" rounded-xl" />
             </div>
           ))}
         </div>

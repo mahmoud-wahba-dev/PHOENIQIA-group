@@ -119,7 +119,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 my-8">
           {socialLinks.map((link, index) => (
             <a
               key={index}

@@ -22,7 +22,7 @@ const Header = () => {
     "https://wa.me/971581995107?text=Hello%20PHOENIQIA%2C%20I%20have%20a%20query...";
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50 overflow-hidden">
+    <header className="bg-gray-900 shadow-lg sticky top-0 z-50 overflow-hidden">
       <div className="container-max px-8 md:px-12 lg:px-16 mx-auto">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -53,7 +53,7 @@ const Header = () => {
     const active = isActive && !item.href.includes("#") ? true : isHashMatch;
 
     return `font-medium transition-colors duration-200 active:scale-95 ${
-      active ? "text-primary" : "text-gray-700 hover:text-primary"
+      active ? "text-primary" : "text-white hover:text-primary"
     }`;
   }}
               >
