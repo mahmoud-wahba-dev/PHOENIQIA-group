@@ -70,6 +70,8 @@ const Services = () => {
                 playsInline
                 preload="auto"
                 muted
+                fetchpriority="high"
+                poster="https://www.dropbox.com/scl/fi/dqkxfckmmjcoiycqu02h5/dubai.mp4?rlkey=rzn2w0d0qqgsrubwmu3wpotlw&st=dmvqu70t&dl=0&raw=1"
               />
             </div>
           </>
