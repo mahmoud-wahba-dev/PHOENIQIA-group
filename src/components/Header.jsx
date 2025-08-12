@@ -33,7 +33,7 @@ const Header = () => {
             >
               <img
                 className="w-full h-full "
-                src="/Screenshot.png"
+                src="/new_logo.png"
                 alt="logo"
               />
             </motion.div>
