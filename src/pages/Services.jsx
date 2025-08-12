@@ -65,7 +65,7 @@ const Services = () => {
             <div className="!h-full">
               <video
                 className=" w-full h-full object-cover"
-                src="/dubai.mp4"
+                src="https://www.dropbox.com/scl/fi/dqkxfckmmjcoiycqu02h5/dubai.mp4?rlkey=XXX&dl=1"
                 autoPlay
                 loop
                 playsInline
@@ -95,19 +95,18 @@ const Services = () => {
             <li key={idx}>{item}</li>
           ))}
         </ul> */}
-        
-<div className="w-full mt-6 rounded-lg  shadow-2xl ">
-  {currentService.items?.map((item, idx) => (
-    <AccordionItem
-      key={idx}
-      title={item.title}
-      description={item.description}
-      docs={item.docs}
-      defaultOpen={idx === 0}
-    />
-  ))}
-</div>
 
+        <div className="w-full mt-6 rounded-lg  shadow-2xl ">
+          {currentService.items?.map((item, idx) => (
+            <AccordionItem
+              key={idx}
+              title={item.title}
+              description={item.description}
+              docs={item.docs}
+              defaultOpen={idx === 0}
+            />
+          ))}
+        </div>
       </section>
 
       {/* Process Section */}
