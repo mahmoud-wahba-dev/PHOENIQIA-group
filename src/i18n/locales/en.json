@@ -1,0 +1,270 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Welcome to PHOENIQIA Group",
+    "subtitle": "Your trusted partner for specialized tourism, visa, and comprehensive business setup services within the United Arab Emirates",
+    "slogan": "Your Trips, Travels, and even Your Business… Are Safe with PHOENIQIA Group",
+    "cta": "Contact Us on WhatsApp"
+  },
+  "services": {
+    "title": "Our Services",
+    "business": {
+      "title": "Business Services",
+      "description": "Complete business setup and legal support in the UAE",
+      "items": [
+        {
+          "title": "Complete Business Setup and Legal Support in the UAE",
+          "description": "Start your business in the UAE with confidence — with Phoenicia Group by your side at every turn. From initial planning to legal compliance, our end-to-end support ensures your company stands on solid ground, ready to grow and succeed in one of the world’s fastest-growing economies.",
+          "docs": []
+        },
+        {
+          "title": "Company Formation in the UAE",
+          "description": "We assist in opening companies in Dubai or the Northern Emirates, issuing trade licenses and residency permits with comprehensive legal and financial support tailored to your business activity.",
+          "docs": [
+            "Trade license application",
+            "Residency permit documents",
+            "Business activity documentation"
+          ]
+        },
+        {
+          "title": "Trade License Renewal",
+          "description": "Never miss a deadline — Phoenicia Group handles your trade license renewal swiftly and flawlessly. We track expiry dates, prepare documentation, and file renewals on time so your business remains fully operational and compliant.",
+          "docs": [
+            "Current trade license",
+            "Updated legal documents",
+            "Payment receipts"
+          ]
+        },
+        {
+          "title": "Issuing New Licenses",
+          "description": "Need a new trade license? Phoenicia Group simplifies the process end to end. We prepare, submit, and follow up on applications so you get your business up and running fast without bureaucratic delays.",
+          "docs": [
+            "License application form",
+            "Supporting company documents",
+            "Payment confirmations"
+          ]
+        },
+        {
+          "title": "Payment Permission Reduction",
+          "description": "Lower your operational costs effortlessly — Phoenicia Group negotiates reduced payment permissions on your behalf, optimizing expenses and scaling your financial efficiency as your business grows.",
+          "docs": [
+            "Cost-benefit analysis report",
+            "Fee reduction application",
+            "Correspondence with authorities"
+          ]
+        },
+        {
+          "title": "Providing Rent Contracts for License Renewal",
+          "description": "Everything aligned for your renewal — we arrange necessary rent or tenancy contracts that meet official standards, ensuring you are always ready for trade license renewal.",
+          "docs": [
+            "Standard tenancy contracts",
+            "Landlord agreements",
+            "Official contract validation"
+          ]
+        },
+        {
+          "title": "Providing and Opening Quotas for Companies",
+          "description": "Expand confidently with Phoenicia Group’s assistance in obtaining and opening business quotas swiftly, clearing the way to grow your enterprise without delay.",
+          "docs": [
+            "Quota application forms",
+            "Department approvals",
+            "Strategic quota planning documents"
+          ]
+        },
+        {
+          "title": "Providing a Local Sponsor for Company Sponsorship",
+          "description": "Your local ally in the UAE — we connect you with trusted local sponsors to ensure legal compliance and smooth company setup with clear agreements and ongoing support.",
+          "docs": [
+            "Local sponsor agreement",
+            "Legal sponsorship contracts",
+            "Ongoing support documentation"
+          ]
+        },
+        {
+          "title": "Submitting Appeals for Violators",
+          "description": "Faced with a compliance issue? Phoenicia Group advocates for you by submitting appeals, negotiating, and resolving violations professionally to protect your business reputation.",
+          "docs": [
+            "Appeal letters",
+            "Hearing documents",
+            "Settlement agreements"
+          ]
+        },
+        {
+          "title": "Issuing One- and Two-Month Tourist Visas",
+          "description": "Need short-term entry for business or pleasure? We arrange one- and two-month tourist visas swiftly, managing all paperwork for a seamless visit from arrival to departure.",
+          "docs": [
+            "Completed visa applications",
+            "Supporting identification documents",
+            "Payment receipts"
+          ]
+        },
+        {
+          "title": "Processing Residency Permits for Wife and Children",
+          "description": "Keep the family together — Phoenicia Group handles spouse and child residency permits with utmost care, supporting your application from start to finish for easy relocation.",
+          "docs": [
+            "Birth and marriage certificates",
+            "Passports and photos",
+            "Medical test reports",
+            "Emirates ID and residence stamping forms"
+          ]
+        },
+        {
+          "title": "Handling All Tasheel and Amer Transactions",
+          "description": "Simplify government transactions — with Phoenicia Group managing all Tasheel and Amer services, saving you time and avoiding hassle on permits, labor cards, visas, and Emirates ID.",
+          "docs": [
+            "Tasheel service requests",
+            "Amer transaction forms",
+            "Document tracking logs"
+          ]
+        }
+      ],
+      "motto": "Start Your Business in the UAE with Confidence with PHOENIQIA Group… And We're With You Every Step of the Way"
+    },
+    "tourism": {
+      "title": "Tourism Services",
+      "description": "Premium travel and pilgrimage services",
+      "items": [
+        {
+          "title": "Tourist Visa from Egypt to the UAE",
+          "description": "Embrace the magic of Dubai with zero stress. At Phoenicia Group, we turn your tourist visa application into a seamless first step of your journey. From submitting precise paperwork to fast-tracking approvals, our expert team ensures your trip begins with confidence and clarity — so you can focus on what truly matters: the adventure ahead.",
+          "docs": [
+            "Passport (≥ 6 months validity, blank pages)",
+            "Recent passport photo (white background)",
+            "Completed visa application form",
+            "Confirmed hotel booking",
+            "Round-trip flight reservation",
+            "Bank statements (last 3 months)",
+            "Travel insurance covering the UAE"
+          ]
+        },
+        {
+          "title": "Schengen Visa from the UAE to Europe",
+          "description": "Set your sights on Europe — let Phoenicia Group take care of the complexity. We guide you through each requirement with precision, helping you present a visa application that shines. Confident, compliant, and compelling — your European adventure starts here.",
+          "docs": [
+            "Valid UAE residency permit",
+            "Passport (valid ≥ 3 months beyond trip; blank pages)",
+            "Schengen application form (signed & completed)",
+            "Two biometric-quality passport photos",
+            "Round-trip flight booking",
+            "Hotel reservation or invitation",
+            "Travel insurance (minimum €30,000)",
+            "Bank statements (last 3–6 months)",
+            "Employment letter or business license / sponsorship letter"
+          ]
+        },
+        {
+          "title": "Consultations & Preparing Strong Visa Files",
+          "description": "Why risk a rejection? At Phoenicia Group, we transform your visa documents into a polished, persuasive package. Whether it’s a cover letter, sponsorship proof, or itinerary — we craft each piece to give your application maximum clarity and strength.",
+          "docs": [
+            "Cover letter that clearly states travel intent",
+            "Bank statements (3–6 months) with clarity & balance",
+            "Sponsorship or invitation letters (if needed)",
+            "Employment or business proof",
+            "Accommodation bookings and itinerary details",
+            "Insurance documents"
+          ]
+        },
+        {
+          "title": "Quick Appointments for Visa Processing",
+          "description": "Don’t wait in queues — get your visa sorted fast. With Phoenicia Group’s strategic embassy and VAC connections, we secure early appointment slots and expedite your application, even during peak seasons. Your time is precious — and we value it.",
+          "docs": [
+            "Fully completed visa application & supporting documents",
+            "Clear passport and photo scans, submitted early",
+            "Contact info + preferred timing"
+          ]
+        },
+        {
+          "title": "Premium Hajj & Umrah Packages with Luxury Accommodation",
+          "description": "Begin your spiritual journey wrapped in comfort and elegance. Phoenicia Group curates VIP Hajj and Umrah experiences where luxury meets devotion: premium lodging, smooth logistics, and heartfelt guidance — all tailored to elevate your sacred trip.",
+          "docs": [
+            "Passport (≥ 6 months validity, blank pages)",
+            "Completed Hajj/Umrah application form",
+            "Passport-sized photos (2)",
+            "Valid visa or eligibility proof",
+            "Vaccination certificates (e.g., meningitis, COVID if needed)",
+            "Accommodation and transport confirmation",
+            "Group traveler details (if applicable)"
+          ]
+        },
+        {
+          "title": "Organizing Monthly Umrah Trips from Egypt and the UAE",
+          "description": "Your monthly spiritual retreat awaits — planned fully by Phoenicia Group. From visa to VIP transfers, we organize a turnkey Umrah experience with unwavering care: peace of mind, convenience, and devotion bundled in one seamless package.",
+          "docs": [
+            "Passport (valid, with blank pages)",
+            "Completed Umrah visa form",
+            "Two passport photos",
+            "Vaccination records",
+            "Proof of residence (UAE applicants) or national ID (Egyptian)",
+            "Flight, hotel, and local transport bookings"
+          ]
+        }
+      ]
+    },
+    "visa": {
+      "title": "Visa Services",
+      "description": "Complete visa processing and documentation",
+      "items": [
+        "Tourist visa from Egypt to the UAE",
+        "Submitting appeals for violators",
+        "Issuing one and two-month tourist visas",
+        "Processing residency permits for wife and children",
+        "Handling all Tasheel and Amer transactions"
+      ]
+    },
+    "tradeLicense": {
+      "title": "Trade License Services",
+      "description": "Complete trade license solutions",
+      "items": [
+        "Issuing new licenses",
+        "Payment permission reduction",
+        "Providing rent contracts for license renewal",
+        "Providing and opening quotas for companies",
+        "Providing a local sponsor for company sponsorship"
+      ]
+    }
+  },
+  "about": {
+    "title": "Who We Are",
+    "description": "PHOENIQIA Group is a company specialized in providing tourism and visa services, in addition to business setup services within the United Arab Emirates. With years of experience, we help you ensure your trips, travels, and even your business… are safe with PHOENIQIA Group.",
+    "mission": "Our mission is to provide exceptional service and support to our clients, ensuring their success in all their endeavors within the UAE.",
+    "values": "We are committed to excellence, integrity, and building lasting relationships with our clients.",
+    "cta": "Contact us via WhatsApp for more information"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Explore our successful projects and happy clients"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our expert team",
+    "info": {
+      "locations": "21 floor, The Court Tower 🗼 , Business  Bay , Dubai ",
+      "phone": "+971581995107",
+      "email": "info@phoeniqia.com"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number (Optional)",
+      "message": "Message",
+      "submit": "Send Message",
+      "whatsapp": "Send via WhatsApp",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    }
+  },
+  "footer": {
+    "description": "Your trusted partner for tourism, visa, and business services in the UAE",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "followUs": "Follow Us",
+    "rights": "© {{year}} PHOENIQIA Group . All rights reserved."
+  },
+  "whatsapp": "Chat on WhatsApp"
+}

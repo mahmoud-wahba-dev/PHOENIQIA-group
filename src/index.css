@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  /* Font and base styles */
+  font-family: 'Poppins', 'Cairo', system-ui, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light;
+  overflow-x: hidden;
+
+  /* 🎨 GLOBAL COLOR VARIABLES */
+  --color-primary: #D4AF37;
+  --color-primary-dark: #B38E2E;
+  --color-primary-light: #F0D290;
+
+  --color-secondary: #2D2B28;
+  --color-secondary-dark: #1C1C1C;
+  --color-secondary-soft: #3E3A36;
+  --color-whatsapp_color: #25D366;
+
+
+  --color-text: #1C1C1C;
+  --color-text-light: #F5F5F5;
+  --color-text-white: #FFFFFF;
+  --color-text-gold: #CFA93E;
+
+  --color-accent-beige: #EBD8B0;
+  --color-accent-orange: #F4B04E;
+  --color-accent-sand: #CE9B4B;
+  --color-accent-cream: #F9EBD3;
+  --color-accent-bronze: #8C6E3D;
+
+  color: var(--color-text);
+  background-color: var(--color-text-white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-secondary-dark); /* Stronger contrast */
+  background: var(--color-text-white);
+}
+
+html[dir="rtl"] {
+  font-family: 'Cairo', 'Poppins', system-ui, sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center gap-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center gap-2;
+  }
+  
+  .btn-whatsapp {
+    @apply bg-whatsapp_color hover:bg-[#1DA851] text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center gap-2;
+  }
+
+  .text-gold {
+    color: var(--color-primary);
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 border border-gray-100;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
