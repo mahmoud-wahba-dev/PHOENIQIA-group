@@ -71,6 +71,7 @@ const Services = () => {
                 playsInline
                 preload="auto"
                 muted
+                fetchPriority="high"
               />
             </div>
           </>
