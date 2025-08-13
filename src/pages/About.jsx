@@ -9,24 +9,24 @@ const About = () => {
   const values = [
     {
       icon: <FaCheckCircle />,
-      title: 'Excellence',
-      description: 'We strive for excellence in every service we provide'
+      title: t("values.list.excellence.title"),
+      description: t("values.list.excellence.description"),
     },
     {
       icon: <FaUsers />,
-      title: 'Experience',
-      description: 'Years of experience in UAE business and tourism sectors'
+      title: t("values.list.experience.title"),
+      description: t("values.list.experience.description"),
     },
     {
       icon: <FaAward />,
-      title: 'Quality',
-      description: 'High-quality services that exceed client expectations'
+      title: t("values.list.quality.title"),
+      description: t("values.list.quality.description"),
     },
     {
       icon: <FaHandshake />,
-      title: 'Trust',
-      description: 'Building lasting relationships based on trust and reliability'
-    }
+      title: t("values.list.trust.title"),
+      description: t("values.list.trust.description"),
+    },
   ];
 
   return (
@@ -77,7 +77,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Our Story
+                {t('about.title')}
               </h2>
               <p className="text-lg text-gray-600 mb-6">
                 {t('about.description')}
@@ -103,10 +103,11 @@ const About = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              Our Values
+                   {t("values.title")}
+
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The principles that guide everything we do
+              {t("values.subtitle")}
             </p>
           </motion.div>
 

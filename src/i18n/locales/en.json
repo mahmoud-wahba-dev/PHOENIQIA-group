@@ -227,6 +227,30 @@
         "Providing and opening quotas for companies",
         "Providing a local sponsor for company sponsorship"
       ]
+    },
+    "process": {
+      "title": "How We Work",
+      "subtitle": "Our streamlined process ensures you get the best service every step of the way",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Consultation",
+          "description": "We discuss your needs and provide expert guidance on the best solutions for your situation."
+        },
+        {
+          "step": "02",
+          "title": "Documentation",
+          "description": "Our team handles all the paperwork and documentation required for your specific service."
+        },
+        {
+          "step": "03",
+          "title": "Completion",
+          "description": "We ensure everything is completed efficiently and keep you updated throughout the process."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started with Our service?"
     }
   },
   "about": {
@@ -244,11 +268,19 @@
     "title": "Contact Us",
     "subtitle": "Get in touch with our expert team",
     "info": {
-      "locations": "21 floor, The Court Tower 🗼 , Business  Bay , Dubai ",
-      "phone": "+971581995107",
-      "email": "info@phoeniqia.com"
+      "title": "Get in Touch",
+      "locations": "21 floor, The Court Tower 🗼 , Business Bay, Dubai",
+      "email": "info@phoeniqia.com",
+      "titles": {
+        "locations": "Locations",
+        "mobile": "Mobile",
+        "email": "Email",
+        "poBox": "P.O. Box",
+        "phone": "Phone"
+      }
     },
     "form": {
+      "title": "Contact Us",
       "name": "Full Name",
       "email": "Email Address",
       "phone": "Phone Number (Optional)",
@@ -266,5 +298,29 @@
     "followUs": "Follow Us",
     "rights": "© {{year}} PHOENIQIA Group . All rights reserved."
   },
-  "whatsapp": "Chat on WhatsApp"
+  "whatsapp": "Chat on WhatsApp",
+  "learn_more": "Learn More",
+  "learn_more_about_us": "Learn More About Us",
+  "values": {
+    "title": "Our Values",
+    "subtitle": "The principles that guide everything we do",
+    "list": {
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for excellence in every service we provide"
+      },
+      "experience": {
+        "title": "Experience",
+        "description": "Years of experience in UAE business and tourism sectors"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "High-quality services that exceed client expectations"
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "Building lasting relationships based on trust and reliability"
+      }
+    }
+  }
 }

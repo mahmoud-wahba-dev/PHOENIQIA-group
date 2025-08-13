@@ -121,52 +121,36 @@ const Services = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              How We Work
+              {/* How We Work */}
+              {t("services.process.title")}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our streamlined process ensures you get the best service every
-              step of the way
+              {/* Our process is simple and easy to follow. */}
+              {t("services.process.subtitle")}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Consultation",
-                description:
-                  "We discuss your needs and provide expert guidance on the best solutions for your situation.",
-              },
-              {
-                step: "02",
-                title: "Documentation",
-                description:
-                  "Our team handles all the paperwork and documentation required for your specific service.",
-              },
-              {
-                step: "03",
-                title: "Completion",
-                description:
-                  "We ensure everything is completed efficiently and keep you updated throughout the process.",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="w-16 h-16 bg-primary-600 text-black rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
-                  {item.step}
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600">{item.description}</p>
-              </motion.div>
-            ))}
+            {t("services.process.steps", { returnObjects: true }).map(
+              (item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="text-center"
+                >
+                  <div className="w-16 h-16 bg-primary-600 text-black rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
+                    {item.step}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600">{item.description}</p>
+                </motion.div>
+              )
+            )}
           </div>
         </div>
       </section>
@@ -176,7 +160,7 @@ const Services = () => {
       <section className="bg-gray-100 py-8">
         <div className="container-max text-center">
           <h2 className="text-2xl font-bold mb-4">
-            Ready to Get Started with Our {currentService.title}?
+  {t("services.cta.title", { service: currentService.title })}
           </h2>
 
           {currentService.id === "business" ? (

@@ -151,7 +151,7 @@ const Home = () => {
                 </h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 <Link to={service.link} className="btn-primary">
-                  Learn More
+                  {t("learn_more")}
                 </Link>
               </motion.div>
             ))}
@@ -191,7 +191,7 @@ const Home = () => {
               <p className="text-gray-600 mb-8">{t("about.mission")}</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/about" className="btn-primary">
-                  Learn More About Us
+                  {t("learn_more_about_us")}
                 </Link>
                 {/* <WhatsAppButton /> */}
               </div>

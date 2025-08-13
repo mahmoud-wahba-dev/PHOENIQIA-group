@@ -72,33 +72,36 @@ Please get back to me at your earliest convenience.`;
     window.open(whatsappUrl, "_blank");
   };
 
-  const contactInfo = [
-    {
-      icon: <FaMapMarkerAlt />,
-      title: "Locations",
-      info: t("contact.info.locations"),
-    },
-    {
-      icon: <FaMobile />,
-      title: "Mobile",
-      info: '+971581995107',
-      link: "tel:+97142388545",
-    },
-    {
-      icon: <FaEnvelope />,
-      title: "Email",
-      info: t("contact.info.email"),
-      link: "mailto:INFO@PHOENIQIA.COM",
-    },{
-      title: "P.O Box",
-      info: "239345",
-      icon: < FaFax />,
-    },{
-      title: "Phone",
-      info: "042388545",
-      icon: < FaPhone />,
-    }
-  ];
+const contactInfo = [
+  {
+    icon: <FaMapMarkerAlt />,
+    title: t("contact.info.titles.locations"),
+    info: t("contact.info.locations"),
+  },
+  {
+    icon: <FaMobile />,
+    title: t("contact.info.titles.mobile"),
+    info: "+971581995107",
+    link: "tel:+97142388545",
+  },
+  {
+    icon: <FaEnvelope />,
+    title: t("contact.info.titles.email"),
+    info: t("contact.info.email"),
+    link: "mailto:INFO@PHOENIQIA.COM",
+  },
+  {
+    icon: <FaFax />,
+    title: t("contact.info.titles.poBox"),
+    info: "239345",
+  },
+  {
+    icon: <FaPhone />,
+    title: t("contact.info.titles.phone"),
+    info: "042388545",
+  }
+];
+
 
   useEffect(() => {
     // Initialize EmailJS (do this once, could be in useEffect)
@@ -137,7 +140,8 @@ Please get back to me at your earliest convenience.`;
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-gray-800 mb-8">
-                Get in Touch
+                {t("contact.info.title")}
+             
               </h2>
 
               <div className="space-y-6 mb-8">
@@ -191,7 +195,8 @@ Please get back to me at your earliest convenience.`;
             >
               <div className="card">
                 <h2 className="text-2xl font-bold text-gray-800 mb-6">
-                  Send us a Message
+                  {t("contact.form.title")}
+                
                 </h2>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
