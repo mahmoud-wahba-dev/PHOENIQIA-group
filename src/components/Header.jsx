@@ -83,7 +83,7 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 rounded-lg hover:bg-gray-100"
           >
-            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            {isMenuOpen ? <FaTimes className="text-white" size={24} /> : <FaBars className="text-white" size={24} />}
           </button>
         </div>
 
@@ -105,7 +105,7 @@ const Header = () => {
                     className={`block py-2 font-medium transition-colors duration-200 ${
                       location.pathname === item.href
                         ? "text-primary-600"
-                        : "text-gray-700 hover:text-primary-600"
+                        : "text-white hover:text-primary"
                     }`}
                   >
                     {item.name}

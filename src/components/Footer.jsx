@@ -18,11 +18,11 @@ const Footer = () => {
   const { t } = useTranslation();
 
   const navigation = [
-    { name: t("nav.home"), href: "#/" },
-    { name: t("nav.about"), href: "#/about" },
-    { name: t("nav.services"), href: "#/services" },
+    { name: t("nav.home"), href: "/" },
+    { name: t("nav.about"), href: "/about" },
+    { name: t("nav.services"), href: "/services" },
     // { name: t("nav.gallery"), href: "#/gallery" },
-    { name: t("nav.contact"), href: "#/contact" },
+    { name: t("nav.contact"), href: "/contact" },
   ];
 
   const socialLinks = [

@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaWhatsapp,
   FaFax,
+  FaMobile,
 } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import WhatsAppButton from "../components/WhatsAppButton";
@@ -78,9 +79,9 @@ Please get back to me at your earliest convenience.`;
       info: t("contact.info.locations"),
     },
     {
-      icon: <FaPhone />,
-      title: "Phone",
-      info: t("contact.info.phone"),
+      icon: <FaMobile />,
+      title: "Mobile",
+      info: '+971581995107',
       link: "tel:+97142388545",
     },
     {
@@ -92,6 +93,10 @@ Please get back to me at your earliest convenience.`;
       title: "P.O Box",
       info: "239345",
       icon: < FaFax />,
+    },{
+      title: "Phone",
+      info: "042388545",
+      icon: < FaPhone />,
     }
   ];
 
@@ -110,7 +115,7 @@ Please get back to me at your earliest convenience.`;
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
               {t("contact.title")}
             </h1>
             <p className="text-xl text-secondary-soft max-w-3xl mx-auto">

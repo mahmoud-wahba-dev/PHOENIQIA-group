@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import './i18n';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const { i18n } = useTranslation();
@@ -39,6 +40,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+          <ScrollToTop />
         <Header />
         <main>
           <Routes>
