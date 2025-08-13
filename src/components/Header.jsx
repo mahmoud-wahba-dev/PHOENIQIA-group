@@ -14,7 +14,6 @@ const Header = () => {
     { name: t("nav.home"), href: "/" },
     { name: t("nav.about"), href: "/about" },
     { name: t("nav.services"), href: "/#services_sec" },
-    // { name: t("nav.gallery"), href: "/gallery" },
     { name: t("nav.contact"), href: "/contact" },
   ];
 
@@ -81,7 +80,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100"
+            className="md:hidden p-2 rounded-lg"
           >
             {isMenuOpen ? <FaTimes className="text-white" size={24} /> : <FaBars className="text-white" size={24} />}
           </button>
@@ -97,20 +96,29 @@ const Header = () => {
               className="md:hidden border-t border-gray-200"
             >
               <div className="py-4 space-y-4">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className={`block py-2 font-medium transition-colors duration-200 ${
-                      location.pathname === item.href
-                        ? "text-primary-600"
-                        : "text-white hover:text-primary"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+          {navigation.map((item) => (
+  <NavLink
+    key={item.name}
+    to={item.href}
+    end={item.href === "/"} // only exact match for home
+    onClick={() => setIsMenuOpen(false)}
+    className={({ isActive }) => {
+      const isHashMatch =
+        item.href.includes("#") &&
+        location.hash === `#${item.href.split("#")[1]}`;
+      const active = item.href.includes("#")
+        ? isHashMatch
+        : isActive;
+
+      return `block py-2 font-medium transition-colors duration-200 ${
+        active ? "text-primary" : "text-white hover:text-primary"
+      }`;
+    }}
+  >
+    {item.name}
+  </NavLink>
+))}
+
                 <div className="flex flex-col space-y-3 pt-4 border-t border-gray-200">
                   <LanguageSwitcher />
                   <a

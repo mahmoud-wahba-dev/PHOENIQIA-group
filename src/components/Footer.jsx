@@ -4,6 +4,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
+  FaMobile,
   FaTiktok,
 } from "react-icons/fa";
 
@@ -21,7 +22,6 @@ const Footer = () => {
     { name: t("nav.home"), href: "/" },
     { name: t("nav.about"), href: "/about" },
     { name: t("nav.services"), href: "/services" },
-    // { name: t("nav.gallery"), href: "#/gallery" },
     { name: t("nav.contact"), href: "/contact" },
   ];
 
@@ -97,13 +97,22 @@ const Footer = () => {
                   {t("contact.info.locations")}
                 </span>
               </div>
-              <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3">
                 <FaPhone className="text-primary-400" />
+                <a
+                  href="tel:042388545"
+                  className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                >
+                  042388545
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaMobile className="text-primary-400" />
                 <a
                   href="tel:+971581995107"
                   className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
                 >
-                  {t("contact.info.phone")}
+                  +971 58 1995107
                 </a>
               </div>
               <div className="flex items-center gap-3">
