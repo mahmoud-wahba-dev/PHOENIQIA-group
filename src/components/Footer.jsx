@@ -33,7 +33,7 @@ const Footer = () => {
     },
     {
       icon: <FaInstagram />,
-      href: "https://www.instagram.com/phoeniqia.travel?igsh=ZzRwaDE2MTlpZHE1",
+      href: "https://www.instagram.com/phoeniqia.travel",
       label: "Instagram",
     },
     {
@@ -63,7 +63,6 @@ const Footer = () => {
             <p className="text-gray-300 mb-6 max-w-md">
               {t("footer.description")}
             </p>
-      
           </div>
 
           {/* Quick Links */}
@@ -92,12 +91,14 @@ const Footer = () => {
             </h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <FaMapMarkerAlt className="text-primary-400" />
+                <a href="https://maps.app.goo.gl/qaynVHkMab7kFXQVA" target="_blank">
+                  <FaMapMarkerAlt className="text-primary-400" />
+                </a>
                 <span className="text-gray-300">
                   {t("contact.info.locations")}
                 </span>
               </div>
-                  <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <FaPhone className="text-primary-400" />
                 <a
                   href="tel:042388545"
