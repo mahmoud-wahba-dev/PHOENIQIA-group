@@ -2,15 +2,9 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import {
-  FaMapMarkerAlt,
-  FaPhone,
-  FaEnvelope,
-  FaWhatsapp,
-  FaFax,
-  FaMobile,
-} from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFax, FaMobile } from "react-icons/fa";
 import emailjs from "emailjs-com";
+
 const Contact = () => {
   const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -41,7 +35,7 @@ Message: ${data.message}`;
     const url = `https://api.callmebot.com/whatsapp.php?phone=${phone}&text=${encodeURIComponent(
       message
     )}&apikey=${apiKey}`;
-https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&apikey=1758439
+
     try {
       const response = await fetch(url);
       console.log("WhatsApp message sent:", response);
@@ -50,8 +44,9 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
     }
   };
 
+ 
   // Combined submit: EmailJS + WhatsApp
-
+ 
   const onSubmitAll = async (data) => {
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -60,7 +55,7 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
       // 1️⃣ Send via EmailJS
       await emailjs.send(
         "service_k9tgmhu", // Your EmailJS service ID
-        "template_komla1j", // Your EmailJS template ID
+        "template_komla1j",// Your EmailJS template ID
         {
           name: data.name,
           time: new Date().toLocaleString(),
@@ -68,7 +63,7 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
           email_id: data.email,
           phone: data.phone || "Not provided",
           message: data.message,
-          // email: data.email, 
+          email: data.email,
         },
         "Z01fVRvktM3o5WmLX"
       );
@@ -87,29 +82,11 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
   };
 
   const contactInfo = [
-    {
-      icon: <FaMapMarkerAlt />,
-      title: t("contact.info.titles.locations"),
-      info: t("contact.info.locations"),
-    },
-    {
-      icon: <FaMobile />,
-      title: t("contact.info.titles.mobile"),
-      info: "+971581995107",
-      link: "tel:+97142388545",
-    },
-    {
-      icon: <FaEnvelope />,
-      title: t("contact.info.titles.email"),
-      info: t("contact.info.email"),
-      link: "mailto:INFO@PHOENIQIA.COM",
-    },
+    { icon: <FaMapMarkerAlt />, title: t("contact.info.titles.locations"), info: t("contact.info.locations") },
+    { icon: <FaMobile />, title: t("contact.info.titles.mobile"), info: "+971581995107", link: "tel:+97142388545" },
+    { icon: <FaEnvelope />, title: t("contact.info.titles.email"), info: t("contact.info.email"), link: "mailto:INFO@PHOENIQIA.COM" },
     { icon: <FaFax />, title: t("contact.info.titles.poBox"), info: "239345" },
-    {
-      icon: <FaPhone />,
-      title: t("contact.info.titles.phone"),
-      info: "042388545",
-    },
+    { icon: <FaPhone />, title: t("contact.info.titles.phone"), info: "042388545" },
   ];
 
   useEffect(() => {
@@ -127,12 +104,8 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
-              {t("contact.title")}
-            </h1>
-            <p className="text-xl text-secondary-soft max-w-3xl mx-auto">
-              {t("contact.subtitle")}
-            </p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">{t("contact.title")}</h1>
+            <p className="text-xl text-secondary-soft max-w-3xl mx-auto">{t("contact.subtitle")}</p>
           </motion.div>
         </div>
       </section>
@@ -148,25 +121,16 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold text-gray-800 mb-8">
-                {t("contact.info.title")}
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-8">{t("contact.info.title")}</h2>
 
               <div className="space-y-6 mb-8">
                 {contactInfo.map((item, index) => (
                   <div key={index} className="flex items-start gap-4">
-                    <div className="text-2xl text-primary-600 mt-1">
-                      {item.icon}
-                    </div>
+                    <div className="text-2xl text-primary-600 mt-1">{item.icon}</div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-800 mb-1">
-                        {item.title}
-                      </h3>
+                      <h3 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h3>
                       {item.link ? (
-                        <a
-                          href={item.link}
-                          className="text-gray-600 hover:text-primary-600 transition-colors duration-200"
-                        >
+                        <a href={item.link} className="text-gray-600 hover:text-primary-600 transition-colors duration-200">
                           {item.info}
                         </a>
                       ) : (
@@ -176,11 +140,6 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
                   </div>
                 ))}
               </div>
-
-              {/* <WhatsAppButton
-                className="w-full justify-center mb-8"
-                message="Hello PHOENIQIA Group, I would like to get in touch with your team."
-              /> */}
 
               {/* Map Placeholder */}
               <div className="bg-gray-200 rounded-xl h-64 flex items-center justify-center">
@@ -202,56 +161,34 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
               viewport={{ once: true }}
             >
               <div className="card">
-                <h2 className="text-2xl font-bold text-gray-800 mb-6">
-                  {t("contact.form.title")}
-                </h2>
+                <h2 className="text-2xl font-bold text-gray-800 mb-6">{t("contact.form.title")}</h2>
 
-                <form
-                  onSubmit={handleSubmit(onSubmitAll)}
-                  className="space-y-6"
-                >
+                <form onSubmit={handleSubmit(onSubmitAll)} className="space-y-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      {t("contact.form.name")} *
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{t("contact.form.name")} *</label>
                     <input
                       type="text"
                       {...register("name", { required: "Name is required" })}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     />
-                    {errors.name && (
-                      <p className="text-red-500 text-sm mt-1">
-                        {errors.name.message}
-                      </p>
-                    )}
+                    {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      {t("contact.form.email")} *
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{t("contact.form.email")} *</label>
                     <input
                       type="email"
                       {...register("email", {
                         required: "Email is required",
-                        pattern: {
-                          value: /^\S+@\S+$/i,
-                          message: "Invalid email address",
-                        },
+                        pattern: { value: /^\S+@\S+$/i, message: "Invalid email address" },
                       })}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     />
-                    {errors.email && (
-                      <p className="text-red-500 text-sm mt-1">
-                        {errors.email.message}
-                      </p>
-                    )}
+                    {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      {t("contact.form.phone")}
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{t("contact.form.phone")}</label>
                     <input
                       type="tel"
                       {...register("phone")}
@@ -260,21 +197,13 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      {t("contact.form.message")} *
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{t("contact.form.message")} *</label>
                     <textarea
                       rows={5}
-                      {...register("message", {
-                        required: "Message is required",
-                      })}
+                      {...register("message", { required: "Message is required" })}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     />
-                    {errors.message && (
-                      <p className="text-red-500 text-sm mt-1">
-                        {errors.message.message}
-                      </p>
-                    )}
+                    {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
                   </div>
 
                   {submitStatus === "success" && (
