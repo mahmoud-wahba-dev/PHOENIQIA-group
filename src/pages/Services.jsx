@@ -10,13 +10,14 @@ import {
 import ServiceCard from "../components/ServiceCard";
 import { useLocation } from "react-router-dom"; // If using React Router
 import EmblaCarousel from "../components/EmblaCarousel"; // Your carousel component
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import AccordionItem from "../components/Accordion";
 
 const Services = () => {
-  const { t } = useTranslation();
+const { t, i18n } = useTranslation();
+  const location = useLocation();
 
-  const services = [
+  const services = useMemo(() => [
     {
       id: "business",
       icon: <FaBriefcase />,
@@ -45,15 +46,15 @@ const Services = () => {
         "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg",
       ],
     },
-  ];
-  const location = useLocation();
+  ], [t, i18n.language]); // rebuild when language changes
+
   const [currentService, setCurrentService] = useState(services[0]);
 
   useEffect(() => {
     const hash = location.hash.replace("#", "");
     const service = services.find((s) => s.id === hash) || services[0];
     setCurrentService(service);
-  }, [location.hash]);
+  }, [location.hash, services]); // also depend on services so it updates when language changes
 
   return (
     <div className="min-h-screen">
