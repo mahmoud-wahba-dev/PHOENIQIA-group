@@ -110,6 +110,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <FaMobile className="text-primary-400" />
                 <a
+                dir="ltr"
                   href="tel:+971581995107"
                   className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
                 >
