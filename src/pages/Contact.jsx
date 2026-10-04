@@ -35,13 +35,13 @@ Phone: ${data.phone || "Not provided"}
 
 Message: ${data.message}`;
 
-    const phone = "971581995107"; // your WhatsApp number with country code
+    const phone = "971585740400"; // your WhatsApp number with country code
     const apiKey = "3933859"; // replace with your CallMeBot API key
 
     const url = `https://api.callmebot.com/whatsapp.php?phone=${phone}&text=${encodeURIComponent(
       message
     )}&apikey=${apiKey}`;
-https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&apikey=1758439
+    // Example: https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&apikey=1758439
     try {
       const response = await fetch(url);
       console.log("WhatsApp message sent:", response);

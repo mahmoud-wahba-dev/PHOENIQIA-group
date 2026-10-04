@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   const whatsappUrl =
-    "https://wa.me/971581995107?text=Hello%20PHOENIQIA%2C%20I%20have%20a%20query...";
+    "https://wa.me/971585740400?text=Hello%20PHOENIQIA%20Group%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.";
 
   return (
     <header className="bg-gray-900 shadow-lg sticky top-0 z-50 overflow-hidden">

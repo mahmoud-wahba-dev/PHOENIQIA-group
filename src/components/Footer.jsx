@@ -49,7 +49,7 @@ const Footer = () => {
   ];
 
   const whatsappUrl =
-    "https://wa.me/971581995107?text=Hello%20PHOENIQIA%2C%20I%20have%20a%20query...";
+    "https://wa.me/971585740400?text=Hello%20PHOENIQIA%20Group%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.";
 
   return (
     <footer className="bg-gray-900 text-white">

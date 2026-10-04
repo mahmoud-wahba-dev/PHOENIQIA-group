@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next';
 const WhatsAppButton = ({ message = "", className = "" }) => {
   const { t } = useTranslation();
   
-  const defaultMessage = "Hello PHOENIQIA Group, I have a query...";
-  const whatsappUrl = `https://wa.me/971581995107?text=${encodeURIComponent(message || defaultMessage)}`;
+  const defaultMessage = "Hello PHOENIQIA Group, I would like to inquire about your services.";
+  const whatsappUrl = `https://wa.me/971585740400?text=${encodeURIComponent(message || defaultMessage)}`;
 
   return (
     <motion.a

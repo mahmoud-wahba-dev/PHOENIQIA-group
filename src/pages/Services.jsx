@@ -174,7 +174,7 @@ const { t, i18n } = useTranslation();
 
           {currentService.id === "business" ? (
             <a
-              href="https://wa.me/+971585740400"
+              href="https://wa.me/971585740400?text=Hello%20PHOENIQIA%20Group%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp mb-4"
@@ -185,7 +185,7 @@ const { t, i18n } = useTranslation();
           ) : (
             <>
               <a
-                href="https://wa.me/+971585740400"
+                href="https://wa.me/971585740400?text=Hello%20PHOENIQIA%20Group%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp mb-4"
