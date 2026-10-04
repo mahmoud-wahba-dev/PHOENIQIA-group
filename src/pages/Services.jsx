@@ -193,9 +193,8 @@ const { t, i18n } = useTranslation();
                 <FaWhatsapp className="inline-block mr-2" />
                 {t("whatsapp")}
               </a>
-              <section className="bg-gray-50 py-12">
+              {/* <section className="bg-gray-50 py-12">
                 <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
-                  {/* TikTok Card */}
                   <motion.a
                     href="https://www.tiktok.com/@mohisl?_t=ZT-8ylNdZ43Fax&_r=1"
                     target="_blank"
@@ -230,7 +229,6 @@ const { t, i18n } = useTranslation();
                     </div>
                   </motion.a>
 
-                  {/* Instagram Card */}
                   <motion.a
                     href="https://www.instagram.com/faridaphoeniqia?igsh=MTVxaG15NTRrcm5vag=="
                     target="_blank"
@@ -265,7 +263,7 @@ const { t, i18n } = useTranslation();
                     </div>
                   </motion.a>
                 </div>
-              </section>
+              </section> */}
             </>
           )}
         </div>
