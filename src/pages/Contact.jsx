@@ -95,8 +95,8 @@ https://api.callmebot.com/whatsapp.php?phone=201207075722&text=This+is+a+test&ap
     {
       icon: <FaMobile />,
       title: t("contact.info.titles.mobile"),
-      info: "+971581995107",
-      link: "tel:+97142388545",
+      info: "+971585740400",
+      link: "tel:+971585740400",
     },
     {
       icon: <FaEnvelope />,

@@ -26,6 +26,14 @@ const { t, i18n } = useTranslation();
       items: t("services.business.items", { returnObjects: true }),
       motto: t("services.business.motto"),
       images: [
+        "/new_services/service1.jpg",
+        "/new_services/service2.jpg",
+        "/new_services/service3.jpg",
+        "/new_services/service4.jpg",
+        "/new_services/service5.jpg",
+        "/new_services/service6.jpg",
+        "/new_services/service7.jpg",
+        "/new_services/service8.jpg",
         "/business_service_1.jpg",
         "/business_service_2.jpg",
         "/business_services/business_service (1).jpg",
@@ -166,7 +174,7 @@ const { t, i18n } = useTranslation();
 
           {currentService.id === "business" ? (
             <a
-              href="https://wa.me/+971581995107"
+              href="https://wa.me/+971585740400"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp mb-4"
@@ -177,7 +185,7 @@ const { t, i18n } = useTranslation();
           ) : (
             <>
               <a
-                href="https://wa.me/+971521539277"
+                href="https://wa.me/+971585740400"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp mb-4"

@@ -102,9 +102,9 @@ src/
 
 ## Contact Information
 
-- **Phone**: +971581995107
+- **Phone**: +971585740400
 - **Email**: INFO@PHOENIQIA.COM
-- **Locations**: TUNIS – DUBAI
+- **Locations**:DUBAI
 - **WhatsApp**: Direct integration throughout the website
 
 ## Future Enhancements
