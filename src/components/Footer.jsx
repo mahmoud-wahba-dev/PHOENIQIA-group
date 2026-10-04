@@ -6,6 +6,7 @@ import {
   FaLinkedinIn,
   FaMobile,
   FaTiktok,
+  FaSnapchatGhost,
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
@@ -45,6 +46,12 @@ const Footer = () => {
       icon: <FaTiktok />,
       href: "https://www.tiktok.com/@phoeniqia_business",
       label: "TikTok",
+    },
+    {
+      icon: <FaSnapchatGhost />,
+      href: "https://www.snapchat.com/@phoeniqiagroup",
+      label: "Snapchat",
+      snapchat: true,
     },
   ];
 
@@ -111,7 +118,11 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.label}
-                  className="w-10 h-10 rounded-full bg-gray-800/80 border border-gray-700/60 flex items-center justify-center text-white hover:text-primary hover:border-primary/50 hover:bg-gray-800 transition-all duration-300 text-lg shadow-sm"
+                  className={`w-10 h-10 rounded-full bg-gray-800/80 border border-gray-700/60 flex items-center justify-center text-white transition-all duration-300 text-lg shadow-sm ${
+                    link.snapchat
+                      ? "hover:text-yellow-300 hover:border-yellow-400/50 hover:bg-gray-800"
+                      : "hover:text-primary hover:border-primary/50 hover:bg-gray-800"
+                  }`}
                 >
                   {link.icon}
                 </a>
