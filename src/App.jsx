@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import AnnouncementBar from './components/AnnouncementBar';
+// import AnnouncementBar from './components/AnnouncementBar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -42,7 +42,7 @@ function App() {
     <Router>
       <div className="App">
           <ScrollToTop />
-        <AnnouncementBar />
+        {/* <AnnouncementBar /> */}
         <Header />
         <main>
           <Routes>
