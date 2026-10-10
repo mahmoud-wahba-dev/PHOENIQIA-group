@@ -34,17 +34,17 @@ const Footer = () => {
     },
     {
       icon: <FaInstagram />,
-      href: "https://www.instagram.com/phoeniqia.travel",
+      href: "https://www.instagram.com/phoeniqiabusiness?psln=N2lheDA4eHVlOG01",
       label: "Instagram",
     },
     {
       icon: <FaLinkedinIn />,
-      href: "https://www.linkedin.com/in/phoeniqia-travel-481654368/",
+      href: "https://www.linkedin.com/in/phoeniqia-business-services-481654368/?isSelfProfile=false",
       label: "LinkedIn",
     },
     {
       icon: <FaTiktok />,
-      href: "https://www.tiktok.com/@phoeniqia_business",
+      href: "https://www.tiktok.com/@phoeniqia.business",
       label: "TikTok",
     },
     {

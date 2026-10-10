@@ -196,7 +196,7 @@ const { t, i18n } = useTranslation();
               {/* <section className="bg-gray-50 py-12">
                 <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
                   <motion.a
-                    href="https://www.tiktok.com/@mohisl?_t=ZT-8ylNdZ43Fax&_r=1"
+                    href="https://www.tiktok.com/@phoeniqia.business"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.03 }}
@@ -230,7 +230,7 @@ const { t, i18n } = useTranslation();
                   </motion.a>
 
                   <motion.a
-                    href="https://www.instagram.com/faridaphoeniqia?igsh=MTVxaG15NTRrcm5vag=="
+                    href="https://www.instagram.com/phoeniqiabusiness?psln=N2lheDA4eHVlOG01"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.03 }}
